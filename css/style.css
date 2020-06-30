@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-flex{
+    display: flex;
+
+}
+
+ .big-container{
+    /* flex-direction: column; */
+    color : white;
+    height: 800px;
+ }
+
+aside{
+    flex:0 0 60px;
+    background-color: #000000;
+    height:calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.brad-logo i {
+    color: #1db954; /*colore verde di spotify*/
+}
+
+/* Right container */
+.container-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+background-color: #141922;
+display: flex;
+flex-direction: row;
+justify-content: flex-end ;
+align-items: center;
+/* da cancellare */
+height:100px;
+position: relative;
+
+}
+
+header button{
+    background-color: inherit;
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.header-button{
+    width:calc(100% - 60px);
+    height: 100px;
+    background-color: #080b12;
+    opacity: 0.6;
+    overflow-y: hidden;
+    position: fixed;
+    top:0;
+    right:0;
+}
+main {
+    background-color: #141922;
+    /* da cancellare */
+    height:100%;
+}
+
+footer {
+    background-color: #282828;
+    /* da cancellare */
+    height:100px;
+}
