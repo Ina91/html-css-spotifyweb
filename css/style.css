@@ -15,6 +15,8 @@
  .big-container{
     color : white;
     max-width: 1200px;
+    display:flex;
+
 
  }
 
@@ -37,7 +39,7 @@ aside .sp_xs-aside{
 
 
 
-.sp_xs-aside{
+.{
 
 }
 
@@ -51,18 +53,17 @@ aside .sp_xs-aside{
 
 /* Right container */
 .container-right{
-    width: 100%;
+    /* width:calc(100% - 150px); */
     height: calc(100vh - 50px);
     margin-left: 50px;
+
 }
 /*  START HEADER */
 header{
     height:100px;
-    width:calc(100vw - 50px);
-
+    width:100%;
     background-color: #141922;
     position: relative;
-
 }
 
 .header-button-container{
@@ -73,9 +74,10 @@ header{
     overflow-y: hidden;
     position: fixed;
     top:0;
-    left:50px;;
+    left:50px;
     z-index: 3;
-    padding:0 30px;
+    padding:30px 100px;
+
 }
 
 header button{
@@ -83,7 +85,12 @@ header button{
     padding: 15px 20px;
     border-radius: 20px;
     text-transform: uppercase;
-    margin: 30px;
+    /* margin: 30px; */
+}
+
+header button:hover{
+    transform: scale(120%);
+
 }
 /* END HEADER */
 
@@ -92,10 +99,11 @@ header button{
 /* START MAIN */
 main {
     background-color: #141922;
-    height: calc(100% - 200px);
-    width: calc(100% - 50px);
-    position: fixed;
+    height: calc(100vh - 200px);
+    width: calc(100vw - 50px);
+    /* position: fixed; */
     overflow: auto;
+    padding: 20px;
 }
 
 main section h2{
@@ -251,17 +259,16 @@ footer span {
     margin-top: 10px;
 }
 
-@media screen and(min-width: 768px){
+@media screen and (min-width: 768px){
     aside{
-        width: 300px;
+        width: 150px;
     }
 
-    header{
-        width:calc(100vw - 300px);
-
+    .container-right {
+        margin-left: 150px;
     }
-    main {
-        width: calc(100% - 300px);
+    .header-button-container{
+        left:150px;
+        padding: 30px 200px;
     }
-
 }
