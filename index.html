@@ -11,7 +11,51 @@
         <body>
             <div class=" big-container clearfix">
                 <aside >
+                    <div class="hidden-xs">
+                        <div class="aside-top">
+                            <div class="brand-logo">
+                                <i class="fab fa-spotify"></i>
+                                <span>Spotify</span>
+                            </div>
+                            <div class="sp_home">
+                                <i class="fas fa-home"></i>
+                                <span>home</span>
+                            </div>
+                            <div class="sp_search">
+                                <i class="fas fa-search"></i>
+                                <span>cerca</span>
+                            </div>
+                            <div class="sp_library">
+                                <i class="far fa-grip-lines-vertical"></i>
+                                <span>La tua libreria</span>
 
+                            </div>
+                            <div class="sp_playlist">
+                                <h4>Playlist</h4>
+                                <i class="fas fa-plus-square"></i>
+                                <span>crea playlist</span>
+                                <ul>
+                                    <li>nome playlist</li>
+                                    <li>nome playlist</li>
+                                    <li>nome playlist</li>
+                                    <li>nome playlist</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- bottom items -->
+                        <div class="aside-bottom">
+                            <div class="arrow">
+                                <i class="fas fa-arrow-circle-down"></i>
+                                <span>installa app</span>
+                            </div>
+                            <hr>
+                            <div class="profile">
+                                <i class="fas fa-user-circle"></i>
+                                <span>John doe</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="visible-xs-block sp_xs-aside ">
                         <!-- top items -->
                         <div class="aside-top">
@@ -61,31 +105,66 @@
                                 <div class="sp_item-container">
 
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square"src="https://img.discogs.com/CcHipbjFl87nqODGMRvV4sGqPOQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6545973-1421694942-2290.jpeg.jpg" alt="acdc">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square"src="https://img.discogs.com/CcHipbjFl87nqODGMRvV4sGqPOQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6545973-1421694942-2290.jpeg.jpg" alt="acdc">
+                                        </div>
                                         <h5>Rock classics</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://pl.scdn.co/images/pl/default/4e64a2318e925dbd05886b54f0ae3a37dd103947" alt="tazza caffè">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square img-radius" src="https://pl.scdn.co/images/pl/default/4e64a2318e925dbd05886b54f0ae3a37dd103947" alt="tazza caffè">
+                                        </div>
                                         <h5>Billi Eilish,Dua lipa,the...</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://img.discogs.com/bPggcKSVH7c4suffJVDpY61lC4s=/fit-in/600x526/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5675273-1401436383-9498.jpeg.jpg" alt="shakira">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://img.discogs.com/bPggcKSVH7c4suffJVDpY61lC4s=/fit-in/600x526/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5675273-1401436383-9498.jpeg.jpg" alt="shakira">
+                                        </div>
                                         <h5>Shakira</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://images.genius.com/49a8b7ca5c42e51c3d156c2cb34d9457.512x512x1.jpg" alt="bk">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://images.genius.com/49a8b7ca5c42e51c3d156c2cb34d9457.512x512x1.jpg" alt="bk">
+                                        </div>
                                         <h5>hot list italia</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://i.scdn.co/image/56228f9353b23405516a6ea8af1c22083f450b57" alt="piano">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://i.scdn.co/image/56228f9353b23405516a6ea8af1c22083f450b57" alt="piano">
+                                        </div>
                                         <h5>peaceful piano</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://i.scdn.co/image/08561bd883bcedbe46dfee3e8950e0578882e27f" alt="spritz">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://i.scdn.co/image/08561bd883bcedbe46dfee3e8950e0578882e27f" alt="spritz">
+                                        </div>
                                         <h5>aperitivo time</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://pl.scdn.co/images/pl/default/93fd39c3cebe91088fd3664fd48517a017684b89" alt="doccia">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://pl.scdn.co/images/pl/default/93fd39c3cebe91088fd3664fd48517a017684b89" alt="doccia">
+                                        </div>
                                         <h5>canto sotto la doccia</h5>
                                     </div>
                                 </div>
@@ -96,15 +175,30 @@
                                 <div class="sp_item-container">
 
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://pl.scdn.co/images/pl/default/c0603ad328b1df3863eb526760db1a49995e6935" alt="gelato">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://pl.scdn.co/images/pl/default/c0603ad328b1df3863eb526760db1a49995e6935" alt="gelato">
+                                        </div>
                                         <h5>estate italiana</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://i.scdn.co/image/ab67706f00000002a8380eb48a153d8e53e99771" alt="trap">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square" src="https://i.scdn.co/image/ab67706f00000002a8380eb48a153d8e53e99771" alt="trap">
+                                        </div>
                                         <h5>trap music</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square" src="https://i.scdn.co/image/fc0afbe07f8d04e6d5dd522b3fb19749805bbb1c" alt="beats">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square img-radius" src="https://i.scdn.co/image/fc0afbe07f8d04e6d5dd522b3fb19749805bbb1c" alt="beats">
+                                        </div>
                                         <h5>lo-fi-beats</h5>
                                     </div>
                                 </div>
@@ -115,11 +209,21 @@
                                 <div class="sp_item-container">
 
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square"src="https://pl.scdn.co/images/pl/default/cdbe4d42699349136720f17b3f3be8838e8f1ac6" alt="latino">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square"src="https://pl.scdn.co/images/pl/default/cdbe4d42699349136720f17b3f3be8838e8f1ac6" alt="latino">
+                                        </div>
                                         <h5>Ritmo latino</h5>
                                     </div>
                                     <div class="sp_item-music">
-                                        <img class="img-responsive img-square"src="https://i.scdn.co/image/ab67706f00000002a088a35ef6e638c42f88deda" alt="run">
+                                        <div class="sp_item-music-img">
+                                            <div class="sp_item-music-overlay">
+                                                <i id="play" class="far fa-play-circle"></i>
+                                            </div>
+                                            <img class="img-responsive img-square"src="https://i.scdn.co/image/ab67706f00000002a088a35ef6e638c42f88deda" alt="run">
+                                        </div>
                                         <h5>energic music</h5>
                                     </div>
                                 </div>
@@ -153,9 +257,32 @@
                         </div>
                         <div class="sp_center-f-bottom">
                             <span></span>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="50" style="width: 30%;">
+                                <span class="sr-only">60% Complete</span>
+                              </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="sp_right-footer"></div>
+                    <div class="sp_right-footer">
+                        <div class="sp_item-right-footer">
+                            <span>
+                                <i class="fas fa-ellipsis-v"></i>
+                                <i class="fas fa-bars"></i>
+                            </span>
+                            <span><i class="fas fa-desktop"></i></span>
+                        </div>
+                        <div class=" sp_volume-bar">
+                            <div><i class="fas fa-volume-up"></i></div>
+
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="50" style="width: 30%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </footer>
             </div>
