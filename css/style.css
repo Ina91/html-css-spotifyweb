@@ -16,8 +16,18 @@
     color : white;
     max-width: 1200px;
     display:flex;
-
-
+ }
+a {
+    text-decoration: none;
+    color:#b4b4b4;
+}
+a:hover{
+    text-decoration: none;
+        color: white;
+}
+ ul li {
+     list-style-type: none;
+     padding-top:10px;
  }
 
 /* START ASIDE */
@@ -28,26 +38,82 @@ aside{
     position: fixed;
     top:0;
     left:0;
+    padding: 10px 0;
 
 }
-aside .sp_xs-aside{
-    height:calc(100% - 100px);
+aside .hidden-xs.sp_lg-aside {
+    height:100% ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+/* aside .visible-xs.sp_xs-aside {
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 
+.visible-xs .aside-bottom {
 
-
-.{
 
 }
 
 .brand-logo i {
     color: #1db954; /*colore verde di spotify*/
 }
+.brand-logo {
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size: 28px;
+}
+
+.sp_aside-item,
+.sp-bottom-a-item{
+    margin-top: 10px;
+    padding-left: 10px;
+    border:3px solid transparent
+}
+.sp_aside-item span{
+    padding-left: 10px;
+}
+
+.sp_home{
+    border-left: 3px solid #1db954;
+}
+.sp_playlist{
+    margin-top: 30px;
+}
+.sp_playlist i {
+    font-size: 20px;
+}
+
+.sp_playlist ul{
+height: 180px;
+overflow: auto;
+
+}
+
+/* prova scroll bar */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color:#1db954;
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
 
 
+.profile{
+    padding-top: 10px;
+}
+
+.aside-active{
+    color: white;
+}
 /* END ASIDE */
 
 
@@ -80,13 +146,15 @@ header{
 
 }
 
-header button{
+.header-button-container>button{
     background-color: inherit;
     padding: 15px 20px;
     border-radius: 20px;
     text-transform: uppercase;
-    /* margin: 30px; */
+    border:2px solid white;
+
 }
+
 
 header button:hover{
     transform: scale(120%);
@@ -101,7 +169,6 @@ main {
     background-color: #141922;
     height: calc(100vh - 200px);
     width: calc(100vw - 50px);
-    /* position: fixed; */
     overflow: auto;
     padding: 20px;
 }
@@ -134,6 +201,10 @@ main section h2{
     color: white;
 }
 
+.sp_main-top ul .active{
+    border-bottom: 1px solid #1db954;
+
+}
 /* start section main */
 
 .sp_item-container{
@@ -197,20 +268,27 @@ footer {
 footer span {
     padding:0 10px;
 }
+.sp_footer-button{
+    background-color: transparent;
+    border: transparent;
+}
 .sp_item-music-footer{
     display: flex;
-    justify-content: flex-start;
+    align-items:  center;
     padding: 10px;
 
 }
 .img-square-footer{
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
 }
 
 .traccia-footer{
     text-align: center;
     padding: 20px;
+}
+.traccia-footer h5{
+    margin-bottom: 0;
 }
 .sp_left-footer{
     display: flex;
@@ -218,7 +296,12 @@ footer span {
     flex-grow: 3;
 }
 /* FOOTER CENTER */
-
+.far.fa-play-circle {
+    font-size: 30px;
+}
+.far.fa-play-circle:hover{
+    transform: scale(1.2);
+}
 .sp_center-f-top,
 .sp_center-f-bottom{
     height: 50%;
@@ -235,6 +318,9 @@ footer span {
 
 .progress-bar{
     background-color: grey;
+}
+.progress-bar:hover{
+    background-color: #1db954;
 }
 /* FOOTER RIGHT */
 
@@ -259,6 +345,8 @@ footer span {
     margin-top: 10px;
 }
 
+
+
 @media screen and (min-width: 768px){
     aside{
         width: 150px;
@@ -270,5 +358,9 @@ footer span {
     .header-button-container{
         left:150px;
         padding: 30px 200px;
+    }
+
+    .arrow{
+        border-bottom: 1px solid white;
     }
 }

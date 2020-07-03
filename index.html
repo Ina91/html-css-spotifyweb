@@ -11,71 +11,89 @@
         <body>
             <div class=" big-container clearfix">
                 <aside >
-                    <div class="hidden-xs sp_xs-aside">
+                    <!-- ASIDE SM MD LG -->
+                    <div class="hidden-xs sp_lg-aside">
                         <div class="aside-top">
-                            <div class="brand-logo">
-                                <i class="fab fa-spotify"></i>
-                                <span>Spotify</span>
+                            <div class="brand-logo text-capitalize">
+                                    <i class="fab fa-spotify"></i>
+                                    <span>Spotify</span>
                             </div>
-                            <div class="sp_home">
-                                <i class="fas fa-home"></i>
-                                <span>home</span>
+                            <div class="sp_home sp_aside-item text-capitalize">
+                                <a class="aside-active" href="#">
+                                    <i class="fas fa-home"></i>
+                                    <span>home</span>
+                                </a>
                             </div>
-                            <div class="sp_search">
-                                <i class="fas fa-search"></i>
-                                <span>cerca</span>
+                            <div class="sp_search sp_aside-item text-capitalize">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                    <span>cerca</span>
+                                </a>
                             </div>
-                            <div class="sp_library">
-                                <i class="far fa-grip-lines-vertical"></i>
-                                <span>La tua libreria</span>
+                            <div class="sp_library sp_aside-item text-capitalize">
+                                <a href="#">
+                                    <i class="fas fa-book"></i>
+                                    <span>La tua libreria</span>
+                                </a>
 
                             </div>
-                            <div class="sp_playlist">
+                            <div class="sp_playlist sp_aside-item text-capitalize">
                                 <h4>Playlist</h4>
-                                <i class="fas fa-plus-square"></i>
-                                <span>crea playlist</span>
-                                <ul>
-                                    <li>nome playlist</li>
-                                    <li>nome playlist</li>
-                                    <li>nome playlist</li>
-                                    <li>nome playlist</li>
-                                </ul>
+                                <a href="#">
+                                    <i class="fas fa-plus-square"></i>
+                                    <span>crea playlist</span>
+                                </a>
+                                    <ul>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                        <li> <a href="#">nome playlist </a></li>
+                                    </ul>
                             </div>
                         </div>
 
                         <!-- bottom items -->
                         <div class="aside-bottom">
-                            <div class="arrow">
-                                <i class="fas fa-arrow-circle-down"></i>
-                                <span>installa app</span>
+                            <div class="arrow sp-bottom-a-item text-capitalize">
+                                <a href="#">
+                                    <i class="fas fa-arrow-circle-down"></i>
+                                    <span>installa app</span>
+                                </a>
                             </div>
-                            <hr>
-                            <div class="profile">
-                                <i class="fas fa-user-circle"></i>
-                                <span>John doe</span>
+
+                            <div class="profile sp-bottom-a-item text-capitalize">
+                                <a class="aside-active" href="#">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>John doe</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="visible-xs-block sp_xs-aside ">
+
+                    <!-- ASIDE XS  -->
+
+                    <div class="visible-xs sp_xs-aside ">
                         <!-- top items -->
                         <div class="aside-top">
                             <div class="brand-logo">
                                 <i class="fab fa-spotify"></i>
                             </div>
-                            <div class="sp_home"><i class="fas fa-home"></i></div>
-                            <div class="sp_search"><i class="fas fa-search"></i></div>
-                            <div class="sp_library">
-                                <i class="fas fa-grip-lines-vertical"></i>
-                                <div class="bar-library"><i class="fas fa-grip-lines-vertical"></i></div>
-                            </div>
+                            <div class="sp_home sp_aside-item"> <a href="#"> <i class="fas fa-home"></i></a> </div>
+                            <div class="sp_search sp_aside-item"> <a href="#"><i class="fas fa-search"></i> </a> </div>
+                            <div class="sp_library sp_aside-item"> <a href="#"><i class="fas fa-book"></i> </a> </div>
                         </div>
 
                         <!-- bottom items -->
-                        <div class="aside-bottom">
-                            <div class="arrow">
-                                <i class="fas fa-arrow-circle-down"></i>
-                            </div>
-                            <div class="profile"><i class="fas fa-user-circle"></i></div>
+                        <div class="aside-bottom ">
+                            <div class="arrow sp-bottom-a-item"> <a href="#"><i class="fas fa-arrow-circle-down"></i> </a></div>
+                            <div class="profile sp-bottom-a-item"> <a href="#"><i class="fas fa-user-circle"></i></a> </div>
                         </div>
                     </div>
 
@@ -84,7 +102,7 @@
                 <div class=" container-right  ">
                     <header class="">
                         <div class="header-button-container">
-                            <button class="pull-right"type="button" name="button">effetua l'uppgrade</button>
+                            <button class="pull-right "type="button">effetua l'upgrade</button>
                         </div>
                     </header>
 
@@ -243,17 +261,17 @@
                             </div>
                         </div>
                         <div class="sp_footer-left-link">
-                            <span><i class="far fa-folder"></i></span>
-                            <span><i class="far fa-heart"></i></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="far fa-folder"></i></button> </span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="far fa-heart"></i></button> </span>
                         </div>
                     </div>
                     <div class="sp_center-footer">
                         <div class="sp_center-f-top">
-                            <span><i class="fas fa-random"></i></span>
-                            <span><i class="fas fa-step-backward"></i></span>
-                            <span><i class="far fa-play-circle"></i></span>
-                            <span><i class="fas fa-step-forward"></i></span>
-                            <span><i class="fas fa-redo-alt"></i></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="fas fa-random"></i></button></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="fas fa-step-backward"></i></button></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="far fa-play-circle"></i></button></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"> <i class="fas fa-step-forward"></i></button></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="fas fa-redo-alt"></i></button></span>
                         </div>
                         <div class="sp_center-f-bottom">
                             <span></span>
@@ -266,20 +284,17 @@
                     </div>
                     <div class="sp_right-footer">
                         <div class="sp_item-right-footer">
-                            <span>
-                                <i class="fas fa-ellipsis-v"></i>
-                                <i class="fas fa-bars"></i>
-                            </span>
-                            <span><i class="fas fa-desktop"></i></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="fas fa-list-ul"></i></button></span>
+                            <span> <button class="sp_footer-button" type="button" name="button"><i class="fas fa-desktop"></i></button></span>
                         </div>
                         <div class=" sp_volume-bar">
                             <div><i class="fas fa-volume-up"></i></div>
-
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="50" style="width: 30%;">
                                     <span class="sr-only">60% Complete</span>
                                 </div>
                             </div>
+
 
                         </div>
                     </div>
