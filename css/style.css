@@ -133,7 +133,6 @@ header{
 }
 
 .header-button-container{
-
     width:100%;
     height: 100px;
     background-color: #080b12;
@@ -258,7 +257,6 @@ main section h2{
 footer {
     height:100px;
     width: 100%;
-
     background-color: #282828;
     position: fixed;
     bottom: 0;
@@ -354,7 +352,6 @@ footer span {
     }
 
     .header-button-container{
-        left:150px;
         padding: 30px 200px;
     }
 
